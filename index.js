@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import "./style.css";
-import bg from "./img/stars.jpg";
+import bg from "./img/bg.jpg";
 
 const container = document.querySelector(".three_bg");
 const loader = new THREE.TextureLoader();
@@ -13,11 +13,11 @@ const camera = new THREE.PerspectiveCamera(
    1000
 );
 
-const renderer = new THREE.WebGL1Renderer();
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 container.appendChild(renderer.domElement);
 
-const geometry = new THREE.PlaneGeometry(14, 8, 15, 9);
+const geometry = new THREE.PlaneGeometry(20, 10, 12, 12);
 const material = new THREE.MeshBasicMaterial({
    map: loader.load(bg),
 });
