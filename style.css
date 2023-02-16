@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Space Grotesk', sans-serif;
+   font-size: 16px;
+   background: #fff;
 }
 
 h1 {
@@ -18,10 +26,9 @@ h2 {
    font-weight: 600;
 }
 
-body {
-   font-family: 'eesti';
-   font-size: 16px;
-   background: #fff;
+.wrap {
+   max-width: 1180;
+   margin: 0 auto;
 }
 
 .hero {
@@ -68,20 +75,129 @@ main {
    min-height: 100vh;
 }
 
-main .solar_system {
+.facts {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   width: 100%;
-   height: 100%;
+   justify-content: center;
+   padding-block: 100px;
 }
 
-main .solar_system > div {
-   width: 50%;
+.facts > h2 {
+   color: black;
+   width: 100%;
+   margin: 0 0 100px;
+   text-transform: uppercase;
+   text-align: center;
 }
+
+.facts > p {
+   position: relative;
+   font-size: 18px;
+   line-height: 24px;
+   text-align: center;
+   margin-inline: 30px;
+   padding-top: 60px;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: 40px;
+}
+
+.facts > p:nth-child(2) {
+   background-image: url("./img/hot.svg");
+}
+.facts > p:nth-child(3) {
+   background-image: url("./img/nasa.svg");
+}
+.facts > p:nth-child(4) {
+   background-image: url("./img/sun.svg");
+}
+.facts > p:nth-child(5) {
+   background-image: url("./img/earth.svg");
+}
+
+
+main .solar_system {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 800px;
+   background: url("./img/stars.jpg") no-repeat center;
+   background-size: cover;
+}
+
 main .solar_system > div:first-of-type {
-   background-color: black;
+   margin-left: 5rem;
+   width: 30%;
 }
+
+main .solar_system > div:first-of-type h2{
+   font-size: 40px;
+   line-height: 48px;
+   margin-bottom: 50px;
+}
+
+main .solar_system > div:first-of-type ul{
+   color: #fff;
+   list-style: none;
+}
+
+main .solar_system > div:first-of-type ul li{
+   display: inline-block;
+   cursor: pointer;
+   font-size: 22px;
+   line-height: 28px;
+   margin: 0 8px 10px 0;
+   color: black;
+   border-radius: 8px;
+   padding: 15px 20px 15px 50px;
+   background-color: #F3F3F3;
+   background-position: center left 15px;
+   background-repeat: no-repeat;
+   background-size: 24px;
+}
+
+main .solar_system > div:first-of-type ul li:hover{
+   background-color: #b0cdd3;
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(1){
+   background-image: url("./img/mercury.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(2){
+   background-image: url("./img/venus.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(3){
+   background-image: url("./img/worldwide.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(4){
+   background-image: url("./img/mars.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(5){
+   background-image: url("./img/jupiter.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(6){
+   background-image: url("./img/saturne.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(7){
+   background-image: url("./img/uranus.png");
+}
+
+main .solar_system > div:first-of-type ul li:nth-child(8){
+   background-image: url("./img/neptune.png");
+}
+
 main .solar_system > div:last-of-type {
-   background-color: red;
+   width: 70%;
+}
+
+main .solar_system > div:last-of-type>canvas {
+   width: 100% !important;
+   height: 100% !important;
 }

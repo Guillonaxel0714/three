@@ -4,7 +4,9 @@
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="style.css"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Device -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <!-- <meta name="viwport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
     <!-- Title -->
@@ -15,29 +17,50 @@
 
 <body>
 
-    <!-- <div class="hero">
+    <div class="hero">
         <div class="three_bg"></div>
         <header>
             <nav>
-                <a href="#">About</a>
-                <a href="#">3D background</a>
-                <a href="#">Projects</a>
+				<a href="#">3D background</a>
+                <a href="#">Fun facts</a>
+                <a href="#">Solar system</a>
                 <a href="#">Contact</a>
             </nav>
         </header>
         <div class="description">
-            <h1>Hello <br />This is three js course</h1>
-            <h2>Here a 3D backgorund </h2>
+            <h1>Hello, <br />This is three js course</h1>
+            <h2>Here a little website about solar system</h2>
         </div>
     </div>
 	<main>
-		<div class="solar_system">
-			<div></div>
-			<div class="schema"></div>
+		<div class="wrap">
+			<div class="facts">
+				<h2>Some fun facts about space !</h2>
+				<p>The <strong>hottest planet</strong> in our <br />solar system is 450° c.</p>
+				<p>A full nasa space suit <br /><strong>costs $12,000,000</strong>.</p>
+				<p>The sun's mass <strong>takes up <br />99.86%</strong> of the solar system.</p>
+				<p><strong>One million earths</strong> <br />can fit inside the sun</p>
+			</div>
 		</div>
-	</main> -->
+		<div class="solar_system">
+			<div>
+				<h2>Here the solar system composed of</h2>
+				<ul>
+					<li>Mercury</li>
+					<li>Venus</li>
+					<li>Earth</li>
+					<li>Mars</li>
+					<li>Jupiter</li>
+					<li>Saturn</li>
+					<li>Uranus</li>
+					<li>Neptune</li>
+				</ul>
+			</div>
+			<div><canvas class="webgl"></canvas></div>
+		</div>
+	</main>
 
-    <!-- <script src="./index.js"></script> -->
+    <script src="./index.js"></script>
     <script type="module" src="./solar.js"></script>
 </body>
 </html>

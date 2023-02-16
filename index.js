@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import "./style.css";
-import bg from "./img/bg.jpg";
+import bg from "./img/bg2.jpg";
 
 const container = document.querySelector(".three_bg");
 const loader = new THREE.TextureLoader();
